@@ -1,10 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background: #121212;
+    margin-top: 100px;
+}
+
 .container {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo {
-    max-width: 200px;
-    border: 1px solid #999;
+    max-width: 170px;
     margin: 10px;
+    background: #232323;
+    color: white;
+    letter-spacing: .03125em;
+}
+img {
+    max-width: 170px;
+    margin-bottom:10px;
+}
+
+.title {
+    padding: 7px;
+    margin-top:10px;
+}
+
+.star .ipc-icon {
+    margin-left:10px;
+    margin-top: 10px;
+    height: 0.8em;
+    width: 1em;
+    margin-right: 0.15em;
+    color: #f5c518;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    background-color: #555;
+    color: white;
+    border: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #777;
+}
+
+
+
+.ipc-title--section-title .ipc-title__text, .ipc-title--subsection-title .ipc-title__text {
+    display: flex;
+    max-height: 2.4em;
+    overflow: hidden;
+    border: none;
+    padding-left: 0.75rem;
+    position: relative;
+}
+.ipc-title--subsection-title .ipc-title__text, .ipc-title--title .ipc-title__text {
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    display: flex;
+    max-height: 2.4em;
+    overflow: hidden;
+    border: none;
+}
+
+.ipc-title--section-title .ipc-title__text:before, .ipc-title--subsection-title .ipc-title__text:before {
+    background: #f5c518;
+    background: #f5c518;
+    border-radius: 50px;
+    content: '';
+    margin-left: -0.75rem;
+    align-self: flex-start;
+    position: absolute;
+    height: 100%;
+    width: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.ipc-title-link-chevron {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.ipc-title-link-chevron:hover {
+    color: #f5c518;
 }

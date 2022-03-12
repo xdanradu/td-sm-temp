@@ -1,5 +1,8 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -7,10 +10,20 @@
 
     <div id="app">
 
+
       <div class="container">
+        <div class="headline">
+        <a href="/what-to-watch/top-picks/?ref_=hm_tpks_sm" class="ipc-title ipc-title--subsection-title ipc-title--baseAlt ipc-title--on-textPrimary ipc-title-link-wrapper" tabindex="0"><h3 class="ipc-title__text">Top picks<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--chevron-right-inline ipc-icon--inline ipc-title-link-chevron" id="iconContext-chevron-right-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path></svg></h3></a>
+        </div>
+
       <div class="photo" v-for="(photo, index) in photos">
-        <div class="title"><b>{{ index }}.</b> {{ photo.title }}</div>
+
           <img v-bind:src="photo.thumbnailUrl" class="thumb"></img>
+
+        <span class="star"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--star-inline" id="iconContext-star-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path></svg>6.7</span>
+
+          <div class="title">{{ photo.title }}</div>
+
           <button v-on:click="deletePhoto(index)">Delete</button>
       </div>
       </div>
