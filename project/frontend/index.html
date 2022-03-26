@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="carsApp">
+
+        <div class="car-container" v-for="car in cars">
+            <div class="name">{{ car.name }}</div>
+            <div class="elements">
+                <div>{{car.year }}</div>
+                <div>{{car.capacitateCilindrica}}</div>
+                <div>{{car.color}}</div>
+            </div>
+
+            <div class="price">{{ car.price }}</div>
+            <div class="delete-btn" v-on:click="remove(car.id)">DELETE</div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

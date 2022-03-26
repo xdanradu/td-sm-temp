@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background: #f2f2f7;
+    margin-top: 10px;
+}
+
+#carsApp {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.car-container {
+    background-color: white;
+    width:150px;
+    height:150px;
+    margin: 10px;
+    border: 1px solid #cecece;
+}
+
+.name {
+    height:30px;
+    padding-top:15px;
+    text-align: center;
+    background-color: #5d5d5d;
+    color: white;
+    font-weight: bold;
+}
+
+.price {
+    color: #f5c518;
+    text-align: center;
+    padding: 10px;
+    height:20px;
+    background-color: #5d5d5d;
+}
+
+.elements {
+    background: #777777;
+    color: white;
+    text-align: center;
+    padding:5px;
+}
+
+.delete-btn {
+    padding: 10px;
+    background: cornflowerblue;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: dodgerblue;
+}
